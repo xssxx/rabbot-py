@@ -2,8 +2,8 @@ import discord
 import random
 import json
 
-from classes.Buttons import Buttons
-from classes.MyClient import MyClient
+from module.Buttons import Buttons
+from module.Client import MyClient
 
 with open("config/config.json", "r") as f:
     config_data = json.load(f)
