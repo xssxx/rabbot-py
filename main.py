@@ -27,7 +27,7 @@ def run():
         await interaction.response.send_message(result)
 
     @client.tree.command(guild=GUILD, name="dice", description="roll dice")
-    async def calc(interaction: discord.Interaction, count:int = 1):
+    async def dice(interaction: discord.Interaction, count:int = 1):
         result = random.randint(1, 7 * count)
         await interaction.response.send_message(content=f"```Your dice🎲 is: {result}```")
 
